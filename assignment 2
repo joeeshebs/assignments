@@ -1,0 +1,110 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Assignment 2
+# Let's test your knowledge!
+
+# _____
+# **Use <code>for</code>, .split(), and <code>if</code> to create a Statement that will print out words that start with 's':**
+
+# In[2]:
+
+
+st = 'Print only the words that start with s in this sentence'
+
+
+# In[13]:
+
+
+#Code here
+z=st.split()
+for i in range(0,11):
+    if z[i][0]=='s':
+        print(z[i])
+
+
+# ______
+# **Use range() to print all the even numbers from 0 to 10.**
+
+# In[15]:
+
+
+for i in range(0,11):
+    if i%2==0:
+        print(i)
+
+
+# ___
+# **Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.**
+
+# In[46]:
+
+
+#Code Here
+sf=[]
+for i in range(1,51):
+    if i%3==0:
+        sf.append(i)
+    
+sf
+
+
+# _____
+# **Go through the string below and if the length of a word is even print "even!"**
+
+# In[49]:
+
+
+st = 'Print every word in this sentence that has an even number of letters'
+
+
+# In[55]:
+
+
+#Code in this cell
+x=st.split()
+for i in range(0,13):
+    if len(x[i])%2==0:
+        print(x[i])
+
+
+# ____
+# **Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".**
+
+# In[63]:
+
+
+#Code in this cell
+for i in range(1,101):
+    if i%3==0 and i%5==0:
+        print('FizzBuzz')
+    elif i%3==0:
+        print('Fizz')
+    elif i%5==0:
+        print('Buzz')
+    else:
+        print(i)
+    
+
+
+# ____
+# **Use List Comprehension to create a list of the first letters of every word in the string below:**
+
+# In[75]:
+
+
+st = 'Create a list of the first letters of every word in this string'
+
+
+# In[82]:
+
+
+#Code in this cell
+sd=st.split()
+ff=[]
+for i in range(0,13):
+    ff.append(sd[i][0])
+ff
+
+
+# ### Great Job!
